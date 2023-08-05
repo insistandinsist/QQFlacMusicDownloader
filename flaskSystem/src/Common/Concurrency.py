@@ -15,7 +15,8 @@ class Downloader():
         self.mConcurrentPool: ThreadPoolExecutor = None
         self.mPoolThread = []
         self.folder = ''
-        self.set_folder(os.getcwd() + '/music/')
+        # self.set_folder(os.getcwd() + '/music/')
+        self.set_folder('/myMusic/music/')
 
     def set_folder(self, folder):
         folder = folder.replace(' ', '')

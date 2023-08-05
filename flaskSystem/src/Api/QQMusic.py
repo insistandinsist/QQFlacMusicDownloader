@@ -574,23 +574,23 @@ class QQMusicApi(BaseApi):
             qStr = ""
             fsize = 0
             mid = id["media_mid"]
-            if int(id["size_hires"]) != 0:
-                # 高解析无损音质
-                code = "RS01"
-                format = "flac"
-                qStr = "高解析无损 Hi-Res"
-                fsize = int(id["size_hires"])
-            elif int(id["size_flac"]) != 0:
-                isEnc = False  # 这句代码是逆向出来的 暂时无效
-                if isEnc:
-                    code = "F0M0"
-                    format = "mflac"
-                else:
-                    code = "F000"
-                    format = "flac"
-                qStr = "无损品质 FLAC"
-                fsize = int(id["size_flac"])
-            elif int(id["size_320mp3"]) != 0:
+            # if int(id["size_hires"]) != 0:
+            #     # 高解析无损音质
+            #     code = "RS01"
+            #     format = "flac"
+            #     qStr = "高解析无损 Hi-Res"
+            #     fsize = int(id["size_hires"])
+            # elif int(id["size_flac"]) != 0:
+            #     isEnc = False  # 这句代码是逆向出来的 暂时无效
+            #     if isEnc:
+            #         code = "F0M0"
+            #         format = "mflac"
+            #     else:
+            #         code = "F000"
+            #         format = "flac"
+            #     qStr = "无损品质 FLAC"
+            #     fsize = int(id["size_flac"])
+            if int(id["size_320mp3"]) != 0:
                 code = "M800"
                 format = "mp3"
                 qStr = "超高品质 320kbps"
