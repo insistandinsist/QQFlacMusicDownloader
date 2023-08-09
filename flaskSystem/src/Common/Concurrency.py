@@ -16,7 +16,8 @@ class Downloader():
         self.mPoolThread = []
         self.folder = ''
         # self.set_folder(os.getcwd() + '/music/')
-        self.set_folder('/myMusic/music/')
+        # self.set_folder('/myMusic/music/')
+        self.set_folder('/Users/moofie/Documents/python/QQFlacMusicDownloader')
 
     def set_folder(self, folder):
         folder = folder.replace(' ', '')
