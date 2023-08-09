@@ -7,3 +7,4 @@ pycryptodome==3.17
 Werkzeug==2.2.3
 zhconv==1.4.3
 Flask-SocketIO==5.3.5
+Flask-HTTPAuth==4.5.0
